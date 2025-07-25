@@ -1,0 +1,74 @@
+{
+    "ads": [
+        {
+            "id": 1,
+            "title": "Moda Influencer Reklamı",
+            "platform": "instagram",
+            "category": "fashion",
+            "followers": "50K+",
+            "price": "₺5,000",
+            "image": "https://via.placeholder.com/300x200",
+            "description": "Moda ve yaşam tarzı içerikleri üreten influencer hesabı için reklam fırsatı.",
+            "engagement_rate": "4.5%",
+            "location": "İstanbul",
+            "language": "Türkçe",
+            "content_type": ["Fotoğraf", "Video", "Story"]
+        },
+        {
+            "id": 2,
+            "title": "Teknoloji İnceleme Reklamı",
+            "platform": "twitter",
+            "category": "tech",
+            "followers": "100K+",
+            "price": "₺8,000",
+            "image": "https://via.placeholder.com/300x200",
+            "description": "Teknoloji ürünleri inceleyen ve öneren hesap için reklam fırsatı.",
+            "engagement_rate": "3.8%",
+            "location": "Ankara",
+            "language": "Türkçe",
+            "content_type": ["Tweet", "Thread", "Video"]
+        },
+        {
+            "id": 3,
+            "title": "Yemek Tarifi Reklamı",
+            "platform": "instagram",
+            "category": "food",
+            "followers": "75K+",
+            "price": "₺6,500",
+            "image": "https://via.placeholder.com/300x200",
+            "description": "Yemek tarifleri ve mutfak içerikleri üreten hesap için reklam fırsatı.",
+            "engagement_rate": "5.2%",
+            "location": "İzmir",
+            "language": "Türkçe",
+            "content_type": ["Fotoğraf", "Reels", "Story"]
+        },
+        {
+            "id": 4,
+            "title": "Spor ve Fitness Reklamı",
+            "platform": "instagram",
+            "category": "sports",
+            "followers": "120K+",
+            "price": "₺10,000",
+            "image": "https://via.placeholder.com/300x200",
+            "description": "Spor ve fitness içerikleri üreten profesyonel hesap için reklam fırsatı.",
+            "engagement_rate": "4.8%",
+            "location": "İstanbul",
+            "language": "Türkçe",
+            "content_type": ["Fotoğraf", "Video", "Reels"]
+        },
+        {
+            "id": 5,
+            "title": "Gaming İçerik Reklamı",
+            "platform": "twitter",
+            "category": "gaming",
+            "followers": "200K+",
+            "price": "₺15,000",
+            "image": "https://via.placeholder.com/300x200",
+            "description": "Oyun içerikleri ve canlı yayın yapan hesap için reklam fırsatı.",
+            "engagement_rate": "6.2%",
+            "location": "İstanbul",
+            "language": "Türkçe",
+            "content_type": ["Tweet", "Thread", "Video"]
+        }
+    ]
+} 

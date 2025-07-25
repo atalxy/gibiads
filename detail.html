@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reklam Detayları - GibiAds</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>GibiAds</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="ai-ads.html">AI Reklamlar</a></li>
+                    <li><a href="create-ad.html">Reklam Oluştur</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reklam Detay Bölümü -->
+    <section class="ad-detail">
+        <div class="container">
+            <div class="ad-detail-content">
+                <div class="ad-detail-header">
+                    <div class="ad-image">
+                        <img src="" alt="" id="adImage">
+                    </div>
+                    <div class="ad-info">
+                        <h1 id="adTitle"></h1>
+                        <div class="platform-badge" id="platformBadge"></div>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span id="followers"></span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span id="engagementRate"></span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="location"></span>
+                            </div>
+                        </div>
+                        <div class="price-tag" id="price"></div>
+                    </div>
+                </div>
+
+                <div class="ad-detail-body">
+                    <div class="detail-section">
+                        <h3>Açıklama</h3>
+                        <p id="description"></p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>İçerik Türleri</h3>
+                        <div class="content-types" id="contentTypes"></div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Hedef Kitle</h3>
+                        <div class="target-audience">
+                            <div class="audience-item">
+                                <i class="fas fa-language"></i>
+                                <span id="language"></span>
+                            </div>
+                            <div class="audience-item">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span id="location"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>İletişim</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Adınız</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">İletişime Geç</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GibiAds</h4>
+                    <p>AI destekli reklam yönetim platformu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">SSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p>info@gibiads.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GibiAds. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/detail.js"></script>
+</body>
+</html> 

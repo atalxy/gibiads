@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reklam Oluştur - GibiAds</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>GibiAds</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="ai-ads.html">AI Reklamlar</a></li>
+                    <li><a href="create-ad.html" class="active">Reklam Oluştur</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reklam Oluşturma Formu -->
+    <section class="create-ad">
+        <div class="container">
+            <div class="form-container">
+                <h1>Yeni Reklam Oluştur</h1>
+                <form id="createAdForm" class="stepper-form">
+                    <!-- Adım 1: Temel Bilgiler -->
+                    <div class="form-step active" data-step="1">
+                        <h2>Temel Bilgiler</h2>
+                        <div class="form-group">
+                            <label for="adTitle">Reklam Başlığı</label>
+                            <input type="text" id="adTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="adDescription">Reklam Açıklaması</label>
+                            <textarea id="adDescription" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="adCategory">Kategori</label>
+                            <select id="adCategory" required>
+                                <option value="">Seçiniz</option>
+                                <option value="fashion">Moda</option>
+                                <option value="tech">Teknoloji</option>
+                                <option value="food">Yemek</option>
+                                <option value="sports">Spor</option>
+                                <option value="gaming">Oyun</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="adImage">Reklam Görseli</label>
+                            <input type="file" id="adImage" accept="image/*" required>
+                        </div>
+                        <button type="button" class="next-step">Devam Et</button>
+                    </div>
+
+                    <!-- Adım 2: Hedefleme -->
+                    <div class="form-step" data-step="2">
+                        <h2>Hedefleme Seçenekleri</h2>
+                        <div class="form-group">
+                            <label>Platform</label>
+                            <div class="platform-options">
+                                <label class="platform-option">
+                                    <input type="checkbox" name="platform" value="instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </label>
+                                <label class="platform-option">
+                                    <input type="checkbox" name="platform" value="twitter">
+                                    <i class="fab fa-twitter"></i> X (Twitter)
+                                </label>
+                                <label class="platform-option">
+                                    <input type="checkbox" name="platform" value="telegram">
+                                    <i class="fab fa-telegram"></i> Telegram
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Takipçi Aralığı</label>
+                            <div class="range-slider">
+                                <input type="range" id="followerRange" min="1000" max="1000000" step="1000">
+                                <div class="range-values">
+                                    <span id="minFollowers">1K</span>
+                                    <span id="maxFollowers">1M</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Hedef Lokasyonlar</label>
+                            <select id="locations" multiple>
+                                <option value="istanbul">İstanbul</option>
+                                <option value="ankara">Ankara</option>
+                                <option value="izmir">İzmir</option>
+                                <option value="bursa">Bursa</option>
+                                <option value="antalya">Antalya</option>
+                            </select>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="prev-step">Geri</button>
+                            <button type="button" class="next-step">Devam Et</button>
+                        </div>
+                    </div>
+
+                    <!-- Adım 3: Bütçe ve Ödeme -->
+                    <div class="form-step" data-step="3">
+                        <h2>Bütçe ve Ödeme</h2>
+                        <div class="form-group">
+                            <label for="budget">Toplam Bütçe (₺)</label>
+                            <input type="number" id="budget" min="1000" step="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Ödeme Modeli</label>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentModel" value="impression" required>
+                                    <span>Görüntüleme Bazlı</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentModel" value="click">
+                                    <span>Tıklama Bazlı</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentModel" value="conversion">
+                                    <span>Dönüşüm Bazlı</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaignDuration">Kampanya Süresi</label>
+                            <select id="campaignDuration" required>
+                                <option value="7">7 Gün</option>
+                                <option value="14">14 Gün</option>
+                                <option value="30">30 Gün</option>
+                                <option value="custom">Özel</option>
+                            </select>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="prev-step">Geri</button>
+                            <button type="submit" class="submit-btn">Reklamı Oluştur</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GibiAds</h4>
+                    <p>AI destekli reklam yönetim platformu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">SSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p>info@gibiads.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GibiAds. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/create-ad.js"></script>
+</body>
+</html> 
