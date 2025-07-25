@@ -36,10 +36,6 @@ gibiads/
 └── data/
 └── sample-ads.json
 
-bash
-Kopyala
-Düzenle
-
 ## 🧪 Kullanım
 
 1. Projeyi GitHub’dan klonlayın veya ZIP olarak indirin.
